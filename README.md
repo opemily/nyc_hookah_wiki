@@ -9,11 +9,11 @@ Astoria is the home of little Cairo, and is packed with hookah lounges, but whic
 TBA
 
 ##**List of Technologies Used**
-1.HTML
-2.CSS
-3.JavaScript & jQuery
-4.Ruby & Sinatra
-5.SQL & ActiveRecord
+1. HTML
+2. CSS
+3. JavaScript & jQuery
+4. Ruby & Sinatra
+5. SQL & ActiveRecord
 
 ##**User Stories**
 A user would be able to search the hookah lounges based on those parameters (Traditional or Modern, alcohol, food, live music or DJ (or neither), opening and closing times. A hookah lounge can be added or taken down (if its closed). Each page will consist of a photo of the establishment, address, photo, list of prices, and the information from the parameters.  
