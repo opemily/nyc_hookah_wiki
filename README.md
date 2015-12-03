@@ -16,7 +16,7 @@ TBA
 5. SQL & ActiveRecord
 
 ##**User Stories**
-A user would be able to search the hookah lounges based on those parameters (Traditional or Modern, alcohol, food, live music or DJ (or neither), opening and closing times. A hookah lounge can be added or taken down (if its closed). Each page will consist of a photo of the establishment, address, photo, list of prices, and the information from the parameters.  
+A user would be able to search the hookah lounges based on those parameters (Traditional or Modern, alcohol, food, live music or DJ (or neither), opening and closing times. A hookah lounge can be added or taken down (if its closed). Each page will consist of a photo of the establishment, address, list of prices, and the information from the parameters.  
 
 Additional features could include allowing the owners of the establishments to be able to log in themselves and modify their pages. I would like the Wiki itself to remain open to the public 
 
