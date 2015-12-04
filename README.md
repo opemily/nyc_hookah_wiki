@@ -1,9 +1,9 @@
-# Astoria Hookah Wiki
+# NYC Hookah Wiki
 ##*A Wiki of Hookah Locations in Little Cairo NYC*
 
 
 ##**App Description**
-Astoria is the home of little Cairo, and is packed with hookah lounges, but which one is best for you? This app will give details about the hookah lounges on Steinway St in Little Cairo, in Astoria. Hookah lounges will be sorted by traditional or modern, whether they serve alcohol, whether they serve food, whether they have live music or a DJ, and what their opening or closing times.
+New York City is packed with hookah lounges, but which one is best for you? This app will give details about the hookah lounges in NYC. Hookah lounges will be sorted by traditional or modern, whether they serve alcohol, whether they serve food, whether they have live music or a DJ, and what their opening or closing times.
 
 ##**App Link**
 TBA
