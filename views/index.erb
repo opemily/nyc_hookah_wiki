@@ -1,0 +1,9 @@
+<h1> New York City Hookah Lounges</h1>
+
+<h3> Boroughs </h3>
+
+<ul>
+  <% @boroughs.each do |borough| %>
+    <li> <a href="/boroughs/<%= borough['id'] %>"><%= borough["name"] %></a> </li>
+
+  <% end %>

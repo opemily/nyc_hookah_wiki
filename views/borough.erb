@@ -1,0 +1,14 @@
+<h1> <%= @borough["name"] %></h1>
+
+<img src="/imgs/boroughs/<%=@borough["img_url"] %>" alt="<%= @borough["name"] %>">
+
+<h3> Neighborhoods </h3>
+
+<ul>
+  <% @neighborhoods.each do |neighborhood| %>
+    <li> <a href="/neighborhood/<%= neighborhood["id"] %>"> <%= neighborhood["name"] %> </a> </li>
+  <% end %>
+
+</ul>
+
+<a href="/"> Go Back </a>
