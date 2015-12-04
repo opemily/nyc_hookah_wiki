@@ -10,7 +10,7 @@ module App
     get "/boroughs/:id" do
       id = params["id"]
       @borough = Borough.find(id)
-      @neighborhoods = Neighborhood.find_by({borough_id: id})
+      @neighborhoods = Neighborhood.find_by borough_id: params["id"]
       erb :borough
     end
 
