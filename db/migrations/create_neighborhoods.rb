@@ -2,7 +2,7 @@ require_relative "../config"
 
 # name the class after the action or transformation
 # we want to apply to the database
-class CreateNeighborhood < ActiveRecord::Migration
+class CreateNeighborhoods < ActiveRecord::Migration
   def up
     puts "apply this thing"
     create_table :neighborhoods do |t|
