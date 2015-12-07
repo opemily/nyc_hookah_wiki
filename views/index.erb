@@ -2,6 +2,8 @@
 
 <h3> Boroughs </h3>
 
+<a href="/login"> Log In</a>
+
 <ul>
   <% @boroughs.each do |borough| %>
     <li> <a href="/boroughs/<%= borough['id'] %>"><%= borough["name"] %></a> </li>

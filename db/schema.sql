@@ -26,3 +26,8 @@ CREATE TABLE cafes (
   music VARCHAR,
   Menu VARCHAR
 );
+
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY,
+  username VARCHAR
+);

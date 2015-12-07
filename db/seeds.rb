@@ -339,14 +339,12 @@ neighborhoods = [
   {name: "Westerleigh", borough_id: 5},
   {name: "Willowbrook", borough_id: 5},
   {name: "Woodrow", borough_id: 5},
-  
-
-
-
-
-
-
-
 ]
 
 Neighborhood.create(neighborhoods)
+
+users = [
+  {username: "testing"}
+]
+
+User.create(users)

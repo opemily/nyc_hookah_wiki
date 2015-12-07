@@ -5,7 +5,14 @@
   <title> NYC Hookah App </title>
 </head>
 <body>
+<% if @user %>
+<%= @user.username %>
+<% end %>
+<form method="POST" action="/sessions">
+  <input type="hidden" name="_method" value="DELETE">
+  <button type="Submit">LOGOUT</button>
 
+</form>
   <%= yield %>
 
 </body>
