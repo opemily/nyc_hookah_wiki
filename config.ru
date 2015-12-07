@@ -1,4 +1,4 @@
-require "pry"
+
 require "sinatra"
 
 require_relative "db/config"
