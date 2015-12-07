@@ -2,21 +2,20 @@ require_relative "../config"
 
 # name the class after the action or transformation
 # we want to apply to the database
-class Neighborhood < ActiveRecord::Migration
+class User < ActiveRecord::Migration
   def up
     puts "apply this thing"
-    create_table :neighborhoods do |t|
+    create_table :users do |t|
       # all the column names and types go here
       # ids are made for us
       t.string(:name)
-      t.integer(:borough_id)
     end
   end
 
   def down
     puts "undo!"
-    drop_table :neighborhoods
+    drop_table :users
   end
 end
 
-Neighborhood.migrate(ARGV[0])
+User.migrate(ARGV[0])
