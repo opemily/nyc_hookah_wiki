@@ -1,0 +1,10 @@
+<h1> <%= @neighborhood["name"] %></h1>
+
+<ul>
+  <% @lounges.each do |lounge| %>
+    <li> <a href="/lounge/<%= lounge["id"] %>"> <%= lounge["name"] %> </a> </li>
+  <% end %>
+
+</ul>
+
+<a href="/"> Go Back </a>

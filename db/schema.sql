@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS boroughs;
 DROP TABLE IF EXISTS neighborhoods;
-DROP TABLE IF EXISTS cafes;
+DROP TABLE IF EXISTS lounges;
 
 CREATE TABLE boroughs (
   id INTEGER PRIMARY KEY,
@@ -14,14 +14,14 @@ CREATE TABLE neighborhoods (
   borough_id INTEGER REFERENCES boroughs(id)
 );
 
-CREATE TABLE cafes (
+CREATE TABLE lounges (
   id INTEGER PRIMARY KEY,
   name VARCHAR,
   address VARCHAR,
   neighborhood_id INTEGER REFERENCES neighborhoods(id),
   photo VARCHAR,
   hours VARCHAR,
-  type VARCHAR,
+  style VARCHAR,
   food VARCHAR,
   alcohol VARCHAR,
   music VARCHAR

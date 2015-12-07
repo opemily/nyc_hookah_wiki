@@ -14,7 +14,23 @@ module App
       id = params["id"]
       @borough = Borough.find(id)
       @neighborhoods = Neighborhood.where borough_id: params["id"]
+
       erb :borough
+    end
+
+    get "/neighborhood/:id" do
+      id = params["id"]
+      @neighborhood = Neighborhood.find(id)
+      @lounges = Lounge.where neighborhood_id: params["id"]
+
+      erb :search_lounges
+    end
+
+    get "/lounge/:id" do
+      id = params["id"]
+      @lounge = Lounge.find(id)
+
+      erb :lounge
     end
 
     get "/users/new" do
