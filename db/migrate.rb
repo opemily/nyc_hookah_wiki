@@ -1,8 +1,8 @@
-require_relative "db/config"
-require_relative "db/migrations/boroughs.rb"
-require_relative "db/migrations/lounges.rb"
-require_relative "db/migrations/neighborhoods.rb"
-require_relative "db/migrations/users.rb"
+require_relative "config"
+require_relative "migrations/boroughs.rb"
+require_relative "migrations/lounges.rb"
+require_relative "migrations/neighborhoods.rb"
+require_relative "migrations/users.rb"
 
 Borough.migrate(ARGV[0])
 Lounge.migrate(ARGV[0])
