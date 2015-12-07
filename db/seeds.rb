@@ -343,6 +343,14 @@ neighborhoods = [
 
 Neighborhood.create(neighborhoods)
 
+cafes = [
+  {name: "Dandana", address: "42-21 Broadway Astoria, NY 11103", neighborhood_id: 124, photo: "dandana.jpg", hours: "4pm - 4am", type: "modern", food: "true", alcohol: "true", music: "DJ" }
+  {name: "Jasmine Lounge", address: "25-50 Steinway St Astoria, NY 11103", neigborhood_id: 124, photo: "jasmine.jpg", hours: "24 hours", type: "traditional", food: "false", alcohol: "false", music: "none"}
+  {name: "La Nuit", address: "1134 1st Ave New York, NY 10065", neighborhood_id: 40, photo: "la-nuit.jpg", hours: "4pm - 2am", type: "modern", food: "true", alcohol: "true", music: "DJ"}
+  {name: "Layali Dubai", address: "24-17 Steinway St Astoria, NY 11105" neighborhood_id: 124, photo: "layali_dubai.jpg", hours: "4pm - 4am", type: "traditional", food: "true", alcohol: "false", music: "live"}
+  {name: "Mijana", address: "23-66 Steinway St Astoria, NY 11105" neighborhood_id: 124, photo: "mijana.jpg", hours: "6pm- 4am" type: "traditional", food: "true", alcohol: "true", music: "live"}
+]
+
 users = [
   {username: "testing"}
 ]

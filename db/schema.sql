@@ -21,10 +21,10 @@ CREATE TABLE cafes (
   neighborhood_id INTEGER REFERENCES neighborhoods(id),
   photo VARCHAR,
   hours VARCHAR,
+  type VARCHAR,
   food VARCHAR,
   alcohol VARCHAR,
-  music VARCHAR,
-  Menu VARCHAR
+  music VARCHAR
 );
 
 CREATE TABLE users (
