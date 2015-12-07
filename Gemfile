@@ -2,6 +2,7 @@
 source "https://rubygems.org"
 
 # gem "rails"
+gem "ruby"
 gem "sinatra"
 gem "activerecord"
 gem "bcrypt"
