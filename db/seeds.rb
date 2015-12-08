@@ -12,7 +12,7 @@ boroughs = [
   {name: "Staten Island", img_url: "staten_island.jpg"}
 ]
 
-# Borough.create(boroughs)
+Borough.create(boroughs)
 
 neighborhoods = [
   {name: "Battery Park City", borough_id: 1},
@@ -353,4 +353,4 @@ lounges = [
   {name: "Mijana", address: "23-66 Steinway St", neighborhood_id: 124, img_url: "mijana.jpg", hours: "6pm- 4am", style: "traditional", food: "true", alcohol: "true", music: "live music"}
 ]
 
-# Lounge.create(lounges)
+Lounge.create(lounges)
