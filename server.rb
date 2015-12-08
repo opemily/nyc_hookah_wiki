@@ -23,22 +23,47 @@ module App
       @neighborhood = Neighborhood.find(id)
       @lounges = Lounge.where neighborhood_id: params["id"]
 
-      erb :search_lounges
+      erb :neighborhood
     end
 
     get "/lounge/:id" do
       id = params["id"]
       @lounge = Lounge.find(id)
+      @neighborhood= Neighborhood.find_by(id: @lounge.neighborhood_id)
 
       erb :lounge
     end
 
+    get "/new_lounge" do
+
+      @boroughs = Borough.all
+      @neighborhoods = Neighborhood.all
+
+      # @options = Neighborhood.all.map{|n| n.name, n.borough_id}
+
+      erb :new_lounge
+    end
+
+    delete "/lounge/:id" do
+      lounge = Lounge.find(params["id"])
+      lounge.destroy
+      redirect ("/")
+    end
+
+    # Username/ Password
     get "/users/new" do
       erb :new_user
     end
 
     post "/users" do 
-      User.create({username: params["username"]})
+       @user = User.create({ 
+                    username: params["username"], 
+                    password: params["password"], 
+                    password_confirmation: params["password_confirmation"]
+                  })
+
+       session[:user_id] = @user.id
+
       redirect ("/")
     end
 
@@ -48,13 +73,13 @@ module App
 
     post "/sessions" do
       username = params["username"]
-      @user = User.find_by username: username
+      @user = User.find_by ({username: params[:username]}).try(:authenticate, params[:password])
 
-      if @user == nil
-        redirect ("/login")
-      else
+      if @user 
         session[:user_id] = @user.id
         redirect ("/")
+      else
+        redirect ("/login")
       end
     end
 
@@ -63,6 +88,9 @@ module App
       session[:user_id] = nil
       redirect ("/")
     end
+
+    
+
 
   end #App
 end #Server

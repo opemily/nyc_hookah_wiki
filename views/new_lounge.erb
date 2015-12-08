@@ -1,0 +1,16 @@
+<form method="POST" action="/lounges">
+
+  <select name="borough" id="borough">
+      <option value="">Select Borough</option>
+    <% @boroughs.each do |borough| %>
+      <option value="borough.id"> <%= borough.name %></option>
+    <% end %>
+  </select>
+  <select name="neighborhood" id="neighborhood">
+    <option value="">Select Neighborhood</option>
+    <%= @borough[borough.id].neighborhoods %>
+
+    <% end %>
+  </select>
+</form>
+

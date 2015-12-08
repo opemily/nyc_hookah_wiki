@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       # all the column names and types go here
       # ids are made for us
-      t.string(:name)
+      t.string(:username)
     end
   end
 

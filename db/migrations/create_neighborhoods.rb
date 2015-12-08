@@ -1,5 +1,3 @@
-require_relative "../config"
-
 # name the class after the action or transformation
 # we want to apply to the database
 class CreateNeighborhoods < ActiveRecord::Migration

@@ -1,4 +1,21 @@
 <a href="/login"> Log In</a>
 
-<h1> <%= @lounge["name"] %> </h1>
-<h3> <%= @lounge["address"] %> </h3>
+<h1> <%= @lounge.name %> </h1>
+<h3> <%= @lounge.address %> </h3>
+<a href="/neighborhood/ <%= @lounge.neighborhood_id %>"> <%= @neighborhood.name %></a>
+<span> Hours: </span> <span> <%= @lounge.hours %> </span>
+
+<img src="/imgs/cafes/<%=@lounge.img_url %>" alt=" <%= @lounge.name %>">
+
+<span> Lounge Style: </span> <span> <%= @lounge.style %> </span>
+<span> Serves Alcohol: </span> <span> <%= @lounge.alcohol %> </span>
+<span> Serves Food: </span> <span> <%= @lounge.food %> </span>
+<span> Entertainment: </span> <span> <%= @lounge.music %> </span>
+
+<a href="/edit_lounge"> Edit Lounge</a>
+<form method="POST" action="/lounge/<%= @lounge.id%>">
+  <input type="hidden" name="_method" value="DELETE">
+  <button type="Submit">Delete Lounge</button>
+</form>
+
+<a href="/neighborhood/ <%= @lounge.neighborhood_id %>"> Go Back</a>
