@@ -7,6 +7,7 @@ class CreateUsers < ActiveRecord::Migration
       # all the column names and types go here
       # ids are made for us
       t.string(:username)
+      t.string(:password_digest)
     end
   end
 
