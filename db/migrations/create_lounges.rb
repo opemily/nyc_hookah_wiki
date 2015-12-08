@@ -10,7 +10,7 @@ class CreateLounges < ActiveRecord::Migration
       t.string(:name)
       t.string(:address)
       t.integer(:neighborhood_id)
-      t.string(:photo)
+      t.string(:img_url)
       t.string(:hours)
       t.string(:style)
       t.string(:food)
